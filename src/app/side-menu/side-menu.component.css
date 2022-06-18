@@ -1,0 +1,45 @@
+.aside {
+    background: var(--gradient-8);
+    width: 15vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+    position: relative;
+}
+
+.logo > img {
+    margin: 0 auto;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+
+}
+
+.aside .icon {
+    font-size: clamp(2rem, 3vw, 5rem);
+    cursor: pointer;
+    text-align: center;
+    transition: all 300ms linear;
+}
+
+.aside .icon:hover {
+    transform: scale(150%);
+    color: var(--orange-6);
+}
+
+.aside .icon::before {
+    content: attr(data-content);
+    color: var(--orange-6);
+    font-size: 0.75rem;
+    display: none;
+}
+
+.aside .icon:hover::before {
+    display: block;
+    animation:
+    var(--animation-ping) forwards;
+    animation-timing-function: var(--ease-squish-3);
+    animation-duration: 2s;
+}
