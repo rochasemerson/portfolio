@@ -1,0 +1,13 @@
+.app {
+    display: flex;
+    min-width: 90vw;
+}
+
+@media (width < 600px) {
+    .app {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        min-width: 100vw;
+    }
+}

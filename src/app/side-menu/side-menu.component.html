@@ -4,7 +4,15 @@
     </div>
     <fa-icon class="icon" [icon]="faHome" data-content="Home"></fa-icon>
     <fa-icon class="icon" [icon]="faAddressCard" data-content="About"></fa-icon>
-    <fa-icon class="icon" [icon]="faAddressBook" data-content="Contact"></fa-icon> 
-    <fa-icon (click)="redirect('https://github.com/rochasemerson')" class="icon" [icon]="faGithub" data-content="Github"></fa-icon> 
-    <fa-icon (click)="redirect('https://www.linkedin.com/feed/')" class="icon" [icon]="faLinkedin" data-content="LinkedIn"></fa-icon> 
+    <fa-icon class="icon" [icon]="faAddressBook" data-content="Contact"></fa-icon>
+    <fa-icon (click)="redirect('https://github.com/rochasemerson')" class="icon" [icon]="faGithub"
+        data-content="Github"></fa-icon>
+    <fa-icon (click)="redirect('https://www.linkedin.com/feed/')" class="icon" [icon]="faLinkedin"
+        data-content="LinkedIn"></fa-icon>
+    <button *ngIf="!dark" (click)="changeTheme('light', $event)" >
+        <fa-icon (click)="changeTheme('light', $event)" class="theme" [icon]="faSun"></fa-icon>
+    </button>
+    <button *ngIf="dark" (click)="changeTheme('dark', $event)" >
+        <fa-icon (click)="changeTheme('light', $event)" class="theme" [icon]="faMoon"></fa-icon>
+    </button>
 </aside>

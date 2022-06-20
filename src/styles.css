@@ -4,3 +4,21 @@
     margin: 0;
     padding: 0;
 }
+
+:root {
+    --font-basic: 'Inknut Antiqua', serif;
+    --background-light: #e9d5d5;
+    --background-dark: #1a1616;
+    --font-light: #252121;
+    --font-dark: #f9f9f9;
+}
+
+body.light-theme{
+    background-color: var(--background-light);
+    color: var(--font-light);
+}
+
+body.dark-theme {
+    background-color: var(--background-dark);
+    color: var(--font-dark);
+}

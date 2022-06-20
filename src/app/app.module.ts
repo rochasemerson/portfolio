@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SideMenuComponent } from './side-menu/side-menu.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SideMenuComponent
+    SideMenuComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
