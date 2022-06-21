@@ -1,0 +1,14 @@
+<div class="about-container">
+    <div class="about-me">
+        <h1 *ngIf="language === 'portuguese'" class="title">{{text.title[0]}}</h1>
+        <h1 *ngIf="language === 'english'" class="title">{{text.title[1]}}</h1>
+    </div>
+    <div class="technologies">
+        <fa-icon [icon]="faHtml5"></fa-icon>
+        <fa-icon [icon]="faCss3"></fa-icon>
+        <fa-icon [icon]="faJsSquare"></fa-icon>
+        <fa-icon [icon]="faNodeJs"></fa-icon>
+        <fa-icon [icon]="faReact"></fa-icon>
+        <fa-icon [icon]="faAngular"></fa-icon>
+    </div>
+</div>

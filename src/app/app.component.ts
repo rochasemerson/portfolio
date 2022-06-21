@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GlobalConstants } from "./global-constants";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portfolio';
+  language = GlobalConstants.language
+  
+  displayLanguage($event: string) {
+    this.language = $event
+  }
 }

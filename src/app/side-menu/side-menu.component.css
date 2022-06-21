@@ -9,11 +9,14 @@
     position: relative;
 }
 
+.aside > a {
+    text-decoration: none;
+}
+
 .logo>img {
     margin: 0 auto;
     width: clamp(2em, 10vw, 3.5em);
     border-radius: 50%;
-
 }
 
 .aside .icon {

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { faHome, faAddressCard, faAddressBook, faSun, faMoon} from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { GlobalConstants } from "../global-constants";
 
 @Component({
   selector: 'side-menu',
@@ -15,16 +16,16 @@ export class SideMenuComponent implements OnInit {
   faLinkedin = faLinkedin
   faSun = faSun
   faMoon = faMoon
-  imgSrc = 'assets/foto.png'
+  br = 'assets/br.svg'
+  gb = 'assets/gb.svg'
   dark: boolean = false
+  language = GlobalConstants.language
+  text = GlobalConstants.menuText
 
-  constructor() { }
+  constructor(
+  ) { }
 
   ngOnInit(): void {
-  }
-
-  redirect(address:string) {
-    window.location.href = `${address}`;
   }
 
   changeTheme(mode:string, event: any) {
@@ -33,4 +34,5 @@ export class SideMenuComponent implements OnInit {
     console.log(event.target);
     this.dark = !this.dark
   }
+
  }
