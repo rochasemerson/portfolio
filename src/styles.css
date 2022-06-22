@@ -7,18 +7,111 @@
 
 :root {
     --font-basic: 'Inknut Antiqua', serif;
-    --background-light: #e9d5d5;
+    --background-light: #d6b4b4;
     --background-dark: #1a1616;
     --font-light: #252121;
     --font-dark: #f9f9f9;
 }
 
+html::before {
+    content: '<html>';
+    position: absolute;
+    top: 0.5rem;
+    left: 16vw;
+    color: var(--cyan-9);
+    font-family: fantasy;
+    font-size: clamp(16px, 5em, 1.5vmax);
+    font-weight: 700;
+    opacity: 0.6;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #05ec8080, 0 0 40px #05ec8080, 0 0 50px #05ec8080, 0 0 60px #05ec8080, 0 0 70px #05ec8080;
+}
+
+html::after {
+    content: '</html>';
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    color: var(--cyan-9);
+    font-family: fantasy;
+    font-size: clamp(16px, 5em, 1.5vmax);
+    font-weight: 700;
+    opacity: 0.6;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #05ec8080, 0 0 40px #05ec8080, 0 0 50px #05ec8080, 0 0 60px #05ec8080, 0 0 70px #05ec8080;
+}
+
+body::before {
+    content: '<body>';
+    position: absolute;
+    top: 2.5rem;
+    left: 18vw;
+    color: var(--cyan-9);
+    font-family: fantasy;
+    font-size: clamp(16px, 5em, 1.5vmax);
+    font-weight: 700;
+    opacity: 0.6;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #05ec8080, 0 0 40px #05ec8080, 0 0 50px #05ec8080, 0 0 60px #05ec8080, 0 0 70px #05ec8080;
+}
+
+body::after {
+    content: '</body>';
+    position: absolute;
+    bottom: 2.5rem;
+    right: 2rem;
+    color: var(--cyan-9);
+    font-family: fantasy;
+    font-size: clamp(16px, 5em, 1.5vmax);
+    font-weight: 700;
+    opacity: 0.6;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #05ec8080, 0 0 40px #05ec8080, 0 0 50px #05ec8080, 0 0 60px #05ec8080, 0 0 70px #05ec8080;
+}
+
 body.light-theme{
+    width: fit-content;
     background-color: var(--background-light);
     color: var(--font-light);
 }
 
 body.dark-theme {
+    width: fit-content;
     background-color: var(--background-dark);
     color: var(--font-dark);
+}
+
+.title {
+    padding: 2.5rem;
+    font-family: var(--font-basic);
+    font-size: clamp(16px, 10em, 5vmax);
+    color: inherit;
+    position: relative;
+}
+
+.title::before {
+    content: '<h1>';
+    color: var(--cyan-9);
+    font-family: fantasy;
+    font-size: clamp(16px, 5em, 1.5vmax);
+    position: absolute;
+    top: 20px;
+    opacity: 0.6;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #05ec8080, 0 0 40px #05ec8080, 0 0 50px #05ec8080, 0 0 60px #05ec8080, 0 0 70px #05ec8080;
+}
+
+.title::after {
+    content: '</h1>';
+    color: var(--cyan-9);
+    font-family: fantasy;
+    font-size: clamp(16px, 5em, 1.5vmax);
+    position: absolute;
+    bottom: 20px;
+    opacity: 0.6;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #05ec8080, 0 0 40px #05ec8080, 0 0 50px #05ec8080, 0 0 60px #05ec8080, 0 0 70px #05ec8080;
+}
+
+@media (width < 600px) {
+    html::before,
+    html::after,
+    body::before,
+    body::after {
+        content: '';
+    }
 }

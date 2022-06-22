@@ -31,7 +31,6 @@ export class SideMenuComponent implements OnInit {
   changeTheme(mode:string, event: any) {
     document.body.classList.toggle(`${mode}-theme`)
     event.target.parentNode.parentNode.classList.toggle('active')
-    console.log(event.target);
     this.dark = !this.dark
   }
 

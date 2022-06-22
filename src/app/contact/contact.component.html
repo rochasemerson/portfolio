@@ -1,1 +1,25 @@
-<p>contact works!</p>
+<div class="contact-container">
+    <div class="contacts-left">
+        <h1 class="title">
+            Contato
+        </h1>
+        <p>Entre em contato por um dos métodos abaixo. Ou se preferir use o formulário!</p>
+        <div class="contacts">
+            <fa-icon class="icon" [icon]="faWhatsapp"></fa-icon>
+            <span>(85) 982192196</span>
+        </div>
+        <div class="contacts">
+            <fa-icon class="icon" [icon]="faGoogle"></fa-icon>
+            <span>rochasoemerson@gmail.com</span>
+        </div>
+    </div>
+    <form #form class="form">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="E-mail" required>
+        <input type="text" name="subject" placeholder="Subject" required>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
+        <button (click)="sendEmail($event)" class="submit-btn">
+            <fa-icon class="icon" [icon]="faEnvelope"></fa-icon>
+        </button>
+    </form>
+</div>

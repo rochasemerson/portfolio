@@ -10,7 +10,7 @@ type aboutMenuType = {
 }
 
 export class GlobalConstants {
-    public static language: string = 'portuguese'
+    public static language: string = 'pt'
     
     public static menuText: menuTextType = {
         home: 'Início',

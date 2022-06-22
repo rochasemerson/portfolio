@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { faAngular, faCss3, faNodeJs, faHtml5, faJsSquare, faReact } from "@fortawesome/free-brands-svg-icons";
 import { GlobalConstants } from "../global-constants";
 
@@ -22,5 +22,4 @@ export class AboutComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }
