@@ -20,13 +20,14 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
   }
   
-  sendEmail = (e: any) => {
+  public sendEmail = (e: Event) => {
     e.preventDefault()
 
     emailjs
       .sendForm(
         'service_uxkioe8',
-        '.form',
+        'template_iumi2pj',
+        e.target as HTMLFormElement,
         '6j2tEcpwIHa5XhWbJ'
       ).then(() => {
         alert('Message sent')

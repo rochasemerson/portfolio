@@ -1,6 +1,9 @@
 import { Component, OnInit} from '@angular/core';
 import { faAngular, faCss3, faNodeJs, faHtml5, faJsSquare, faReact } from "@fortawesome/free-brands-svg-icons";
+import { faArrowsRotate } from "@fortawesome/free-solid-svg-icons";
 import { GlobalConstants } from "../global-constants";
+import { AppComponent } from '../app.component'
+
 
 @Component({
   selector: 'app-about',
@@ -14,7 +17,8 @@ export class AboutComponent implements OnInit {
   faHtml5 = faHtml5
   faJsSquare = faJsSquare
   faReact = faReact
-  language = GlobalConstants.language
+  faArrowsRotate = faArrowsRotate
+  language = AppComponent.language
   text = GlobalConstants.aboutText
 
   constructor() {

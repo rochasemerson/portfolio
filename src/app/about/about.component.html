@@ -1,10 +1,8 @@
 <div class="about-container">
     <div class="about-me">
-        <h1 *ngIf="language === 'pt'" class="title">{{text.title[0]}}</h1>
-        <h1 *ngIf="language === 'en'" class="title">{{text.title[1]}}</h1>
-        <p>Graduando em Análise e Desenvolvimento de Sistemas, com
-            conhecimento em Javascript, C++ e Python. Programador ousado
-            e interessado em adquirir cada vez mais conhecimento.</p>
+        <h1 *ngIf="language === 'pt'" class="title">{{text.pt[0]}}</h1>
+        <h1 *ngIf="language === 'en'" class="title">{{text.en[0]}}</h1>
+        <p>{{text.pt[1]}}</p>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam corrupti velit temporibus nulla accusamus, ducimus, eius dolorum veritatis quibusdam explicabo enim ad necessitatibus impedit tempore consequatur eos culpa animi minus.</p>
     </div>
     <div class="technologies">
@@ -30,7 +28,6 @@
         </div>
         <div>
             <div class="tech">Angular</div>
-
             <fa-icon class="icon" [icon]="faAngular"></fa-icon>
         </div>
     </div>

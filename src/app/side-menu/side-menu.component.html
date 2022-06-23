@@ -1,7 +1,8 @@
 <aside class="aside">
-    <div class="logo">
+    <div (click)="changeText()" class="logo">
         <img  *ngIf="language === 'pt'" src={{br}} alt="">
         <img  *ngIf="language === 'en'" src={{gb}} alt="">
+        <h3>{{language}}</h3>
     </div>
     <a class="icon"
         [attr.data-content]="text.home" routerLink="/">
@@ -20,9 +21,9 @@
         <fa-icon [icon]="faLinkedin"></fa-icon>
     </a>
     <button *ngIf="!dark" (click)="changeTheme('light', $event)">
-        <fa-icon (click)="changeTheme('light', $event)" class="theme" [icon]="faSun"></fa-icon>
+        <fa-icon class="theme" [icon]="faSun"></fa-icon>
     </button>
     <button *ngIf="dark" (click)="changeTheme('dark', $event)">
-        <fa-icon (click)="changeTheme('light', $event)" class="theme" [icon]="faMoon"></fa-icon>
+        <fa-icon class="theme" [icon]="faMoon"></fa-icon>
     </button>
 </aside>

@@ -11,6 +11,7 @@
     --background-dark: #1a1616;
     --font-light: #252121;
     --font-dark: #f9f9f9;
+    color-scheme: unset;
 }
 
 html::before {
@@ -39,6 +40,11 @@ html::after {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #05ec8080, 0 0 40px #05ec8080, 0 0 50px #05ec8080, 0 0 60px #05ec8080, 0 0 70px #05ec8080;
 }
 
+body {
+    background-color: var(--background-dark);
+    color: var(--font-dark);
+}
+
 body::before {
     content: '<body>';
     position: absolute;
@@ -65,7 +71,7 @@ body::after {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #05ec8080, 0 0 40px #05ec8080, 0 0 50px #05ec8080, 0 0 60px #05ec8080, 0 0 70px #05ec8080;
 }
 
-body.light-theme{
+body.light-theme {
     width: fit-content;
     background-color: var(--background-light);
     color: var(--font-light);
