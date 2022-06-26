@@ -75,14 +75,6 @@
     color: #dd0031;
 }
 
-.rotate-btn > .icon {
-    position: absolute;
-    color: var(--orange-6);
-    bottom: 0;
-    right: 0;
-    transform: translate(50%, 50%) scale(0.75);
-}
-
 @media (width < 600px) {
     .about-container {
         display: flex;
