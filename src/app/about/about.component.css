@@ -83,24 +83,6 @@
     transform: translate(50%, 50%) scale(0.75);
 }
 
-.rotate-btn .icon:hover {
-    animation: var(--animation-blink);
-}
-
-.rotate-animate {
-    animation: rotate 1s forwards ease-in-out;
-}
-
-.rotate-back {
-    animation: rotate 1s backwards ease-in-out;
-}
-
-@keyframes rotate {
-    100% {
-        transform: rotateY(-180deg);
-    }
-}
-
 @media (width < 600px) {
     .about-container {
         display: flex;
